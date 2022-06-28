@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo,
+.link,
+.menu {
+  text-decoration: none;
+  cursor: pointer;
+}

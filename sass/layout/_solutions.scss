@@ -1,0 +1,35 @@
+.solutions {
+  background-color: #2f303a;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  .solutions__overlay {
+    padding: 118px 0;
+    @include mq(desc) {
+      padding: 200px 0;
+      max-width: 1600px;
+    }
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../img/solutions/img.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    @include font(26px, 900, 1.62, 0.06em);
+    color: var(--primary-bg-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    @include mq(desc) {
+      @include font(44px, 900, 1.4, 0.06em);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.logo {
+  @include font(26px, 700, 1.2, 0.03em, "raleway");
+  color: var(--accent-color);
+  margin-right: 93px;
+  padding: 24px 0;
+
+  &__black {
+    color: var(--title-color);
+  }
+
+  &__white {
+    color: var(--primary-bg-color);
+  }
+}

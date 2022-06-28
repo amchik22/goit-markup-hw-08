@@ -1,0 +1,19 @@
+.btn {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+  border-color: transparent;
+  padding: 10px 0;
+  min-width: 200px;
+  border-radius: 3%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: var(--transition);
+  transition-property: background-color;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--primary-bg-color);
+  }
+}

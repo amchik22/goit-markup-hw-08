@@ -1,0 +1,27 @@
+.navigation {
+  .navigation__item {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--title-color);
+    position: relative;
+    transition: var(--transition);
+    transition-property: color;
+    padding: 32px 0;
+  }
+  &__item:hover,
+  &__item:focus {
+    color: var(--accent-color);
+  }
+
+  & .current {
+    color: var(--accent-color);
+  }
+
+  &__list {
+    display: none;
+    @include mq(tab) {
+      display: flex;
+      gap: 50px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+  display: block;
+
+  &__item:not(:last-child) {
+    margin-right: 70px;
+  }
+
+  &__item:last-child {
+    margin-left: auto;
+  }
+
+  &_wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &-form {
+    display: flex;
+    width: 570px;
+    gap: 12px;
+  }
+
+  &-mail-wrapper {
+    display: flex;
+  }
+
+  &-btn {
+    display: inline-flex;
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    border-color: transparent;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    cursor: pointer;
+    transition: var(--transition);
+    transition-property: background-color;
+
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
+  }
+
+  &-span-btn {
+    margin-left: 12px;
+  }
+
+  & .contact__link {
+    @include font(14px, null, 1.2, 0.03em);
+    display: block;
+    margin-top: 9px;
+  }
+
+  &__title {
+    @include font(14px, 700, 1.15, 0.03em);
+    text-transform: uppercase;
+    color: var(--primary-bg-color);
+  }
+
+  & .social__icon use {
+    fill: #fff;
+  }
+
+  &-label-title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  &-input {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 15px 0 15px 16px;
+    background-color: transparent;
+    width: 358px;
+    color: var(--background-team-color);
+    transition: border var(--transition);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+  }
+
+  &-svg {
+    fill: #fff;
+    margin-left: 10px;
+  }
+
+  &-label-icon {
+    fill: #fff;
+  }
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 20px;
+
+  &__item {
+    text-decoration: none;
+    color: var(--primary-bg-color);
+    display: block;
+  }
+}

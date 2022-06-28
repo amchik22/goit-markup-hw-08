@@ -1,0 +1,30 @@
+.work {
+  display: none;
+
+  @include mq(desc) {
+    padding: 0 0 94px;
+
+    .work__list {
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .work__item {
+      display: block;
+      position: relative;
+    }
+
+    .work-item__title {
+      @include font(14px, 700, 1.14, 0.03em);
+      position: absolute;
+      text-transform: uppercase;
+      color: var(--primary-bg-color);
+      text-align: center;
+      padding: 27px 0;
+      background: rgba(47, 48, 58, 0.8);
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.contact__list {
+  display: none;
+  @include mq(tab) {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+    align-items: center;
+  }
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact__link {
+  @include font(14px, 500, 1.15, 0.02em);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+  transition-property: color;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact__icon {
+  fill: currentColor;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}

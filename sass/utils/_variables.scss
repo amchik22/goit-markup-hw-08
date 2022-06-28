@@ -1,0 +1,16 @@
+:root {
+  --title-color: #000;
+  --text-color: #757575;
+  --primary-bg-color: #fff;
+  --background-team-color: #f5f4fa;
+  --accent-color: #2196f3;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin font($fs, $fw, $ln, $ls, $ff: "roboto") {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $ln;
+  letter-spacing: $ls;
+}
